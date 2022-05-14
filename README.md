@@ -1,2 +1,3 @@
-# beacademy-devstart-frontend-myportfolio
-Portfolio created for the DevStart course.
+# BeAcademy Student Portfolio
+
+Website Portfolio created for the DevStart course.
