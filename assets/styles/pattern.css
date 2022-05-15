@@ -19,7 +19,12 @@
   body::-webkit-scrollbar-track{
     background-color: transparent;
   }
-
+  .logo{
+    transition: all 0.2s linear;
+  }
+  .logo:hover {
+    transform: rotate(360deg);
+  }
   .container {
     width: 100%;
     max-width: 1246px; 
@@ -54,12 +59,13 @@
     background-color: var(--primary-color);
     color: var(--black-color);
     padding: 1rem 2.6rem;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
   }
   
   .btn-primary:hover {
     background-color: var(--white-color);
-    transform: scale(1.04);
+    transform: scale(103%);
+    box-shadow: 5px 5px var(--primary-color);
   }
   
   .btn-primary.empty {
@@ -73,8 +79,17 @@
   .btn-primary.empty:hover {
     color: var(--black-color);
     background-color: var(--primary-color);
+    box-shadow: 5px 5px var(--white-color);
   }
-  
+
+  /* .social-icon {
+    transition: all 2s cubic-bezier(.29, 1.01, 1, -0.68);
+  } */
+  .social-icon:hover {
+    animation-duration: 2s;
+    animation-name: bounce;
+    /* transform: scale(102%); */
+  }
   .menu-item {
     display: inline-block;
     color: var(--primary-color);
@@ -87,6 +102,7 @@
   .menu-item:hover {
     color: var(--white-color);
     transform: scale(1.04);
+    border-bottom: 1px solid var(--primary-color) ;
   }
   
   .tag {
@@ -116,3 +132,12 @@
     border: 1px solid var(--primary-color);
   }
 
+  @keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-25px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+  }
