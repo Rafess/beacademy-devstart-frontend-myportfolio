@@ -41,3 +41,133 @@
   header .container nav .menu-social .social-item {
     transition: all 0.2s;
   }
+  .title {
+    max-width: 550px;
+  }
+  .title h1 {
+      font-family: "Inter";
+      font-weight: 800;
+      font-size: 6.4rem;
+      line-height: 9.0rem;
+      color: var(--white-color);
+      margin-top: 7rem;
+      text-align: center;
+  }
+
+  .title h1 span{
+    white-space: pre;
+    color: var(--primary-color);
+  }
+
+  .s-hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .s-hero .container .title p {
+    color: var(--primary-color);
+    margin: 3.2rem 0;
+    font-size: 1.8rem;
+  }
+
+  .techs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.8rem;
+  }
+
+  .techs .tech {
+    margin-right: .8rem;
+  }
+  .s-success {
+    margin-top: 14.4rem;
+  }
+.s-success .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .title-success {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.title-success h2, .title-success h2 span {
+  font-size: 6.4rem;
+  line-height: 7.74rem;
+}
+.tag{
+  color: var(--black-color);
+  display: inline;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--black-color);
+}
+
+.card {
+  justify-content: space-evenly;
+  margin-left: 3.2rem;
+  text-align: left;
+  padding-top: 5rem;
+}
+.card, .card-active {
+  width: 28rem;
+  height: 30.4rem;
+}
+.card {
+  background-color: var(--white-color);
+  transition: all .2s linear;
+}
+.active {
+  background-color: var(--primary-color);
+}
+.card-title {
+  font-size: 6.4rem;
+  padding-left: 1.7rem; 
+}
+.card:hover {
+  transform: scale(102%);
+  box-shadow: 5px 5px var(--primary-color);
+}
+.active:hover{
+  box-shadow: 5px 5px var(--white-color);
+}
+.card-info {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  margin-top: 5.5rem;
+  padding-bottom: 4.4rem;
+  padding-left: 2.6rem;
+}
+
+.card-info p strong {
+  font-weight: 600;
+  
+}
+
+.s-about{
+  margin-top: 5.2rem;
+  
+}
+.s-about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.s-about .container .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.s-about .container .about-me h2{
+  font-size: 6.4rem;
+  font-weight: 900;
+  margin-bottom: 2.4rem;
+}
+
