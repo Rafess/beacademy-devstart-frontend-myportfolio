@@ -260,4 +260,43 @@
   opacity: .7;
 }
 
+.s-contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 9.2rem;
+}
+.s-contact .container .title-contact {
+  margin-bottom: 3.2rem;
+}
+.s-contact .container .title-contact h2{
+  font-size: 6.4rem;
+  line-height: 7.2rem;
+  margin-bottom: 2.4rem;
+}
 
+.s-contact .container .form-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6.4rem;
+}
+
+
+.s-contact .container .form-contact .input-group input:focus, textarea:focus {
+  border: 1px solid var(--primary-color);
+}
+.s-contact .container .form-contact .input-button {
+  align-self: flex-end;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--semi-black);
+  margin-top: 6rem;
+  padding: 5.2rem 0;
+}
+footer .copy p{ 
+  font: 400 1.6rem Poppins ;
+}
