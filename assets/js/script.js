@@ -8,17 +8,32 @@
  carouselButtons.forEach(button => {
      button.addEventListener('click', event => {
          if(event.target.id === 'previous') {
-             if(imageIndex !== 0) {
+             if(imageIndex !== 1) {
                  imageIndex-=1;
-                 translateX += 500;
+                 translateX += 50;
              }
          } else {
             if(imageIndex !== numberImages) {
                 imageIndex+=1;
-                translateX -=500;
+                translateX -=50;
             }
         }
 
-         carouselImages.style.transform = `translateX(${translateX}px)`;
+         carouselImages.style.transform = `translateX(${translateX}rem)`;
      });
  });
+
+
+ let sSuccess = document.querySelector(".s-success");
+ 
+
+let scrollShow = function () {
+    let scrollY = window.scrollY;
+    if (scrollY >= 250) {
+        sSuccess.className = "s-success show";
+    } else {
+        sSuccess.className = "s-success hide";
+    }
+};
+
+window.addEventListener("scroll", scrollShow);

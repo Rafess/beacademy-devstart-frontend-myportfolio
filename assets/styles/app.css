@@ -84,6 +84,13 @@
   }
   .s-success {
     margin-top: 14.4rem;
+    transition: opacity 0.8s ease-in-out;
+  }
+  .show {
+    opacity: 1;
+  }
+  .hide {
+    opacity: 0;
   }
 .s-success .container {
   display: flex;
@@ -212,8 +219,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100rem;
-  gap: .2em;
+  width: 50rem;
+  
 }
 
 .s-projects .container .projects img {
@@ -238,11 +245,11 @@
   transform: translateX(0);
   transition: transform 0.25s;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .carousel-imgs img{
-  width: 500px;
+  width: 50rem;
 }
 .next, .previous {
   opacity: 0.25;
@@ -282,7 +289,6 @@
   justify-content: space-around;
   gap: 6.4rem;
 }
-
 
 .s-contact .container .form-contact .input-group input:focus, textarea:focus {
   border: 1px solid var(--primary-color);
